@@ -5,6 +5,11 @@
   "description": "Displays Atom cursorline in the minimap",
   "repository": "https://github.com/atom-minimap/minimap-cursorline",
   "license": "MIT",
+  "keywords": [
+    "minimap",
+    "cursorline",
+    "cursor"
+  ],
   "engines": {
     "atom": ">=0.184.0"
   },
