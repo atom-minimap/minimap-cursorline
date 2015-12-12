@@ -1,7 +1,7 @@
 {
   "name": "minimap-cursorline",
   "main": "./lib/minimap-cursorline",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Displays Atom cursorline in the minimap",
   "repository": "https://github.com/atom-minimap/minimap-cursorline",
   "license": "MIT",
