@@ -4,9 +4,7 @@ Highlights every line with a cursor in Atom's [minimap](https://atom.io/packages
 
 ![Minimap cursorline Screenshot](https://github.com/atom-minimap/minimap-cursorline/blob/master/screenshot.gif?raw=true)
 
-Installation
-
-Add a CSS rule to your `styles.less`:
+Depending on your [Atom theme](https://atom.io/themes/) you might need to add a CSS rule to your `styles.less`:
 
 ```css
 .minimap .cursor-line {
