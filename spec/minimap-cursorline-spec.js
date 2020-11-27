@@ -1,47 +1,34 @@
-'use babel'
+/** @babel */
 
-import MinimapCursorLine from '../lib/minimap-cursorline'
-
-// Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
-//
-// To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
-// or `fdescribe`). Remove the `f` to unfocus the block.
+// import MinimapCursorLine from '../lib/minimap-cursorline'
 
 describe('MinimapCursorLine', () => {
-  let [workspaceElement, editor, minimap] = []
+	let workspaceElement, editor, minimap
 
-  beforeEach(() => {
-    workspaceElement = atom.views.getView(atom.workspace)
-    jasmine.attachToDOM(workspaceElement)
+	beforeEach(async () => {
+		workspaceElement = atom.views.getView(atom.workspace)
+		jasmine.attachToDOM(workspaceElement)
 
-    waitsForPromise(() => {
-      return atom.workspace.open('sample.js').then((e) => {
-        editor = e
-      })
-    })
+		editor = await atom.workspace.open('sample.js')
 
-    waitsForPromise(() => {
-      return atom.packages.activatePackage('minimap').then((pkg) => {
-        minimap = pkg.mainModule.minimapForEditor(editor)
-      })
-    })
+		// Package activation will be deferred to the configured, activation hook, which is then triggered
+		// Activate activation hook
+		atom.packages.triggerDeferredActivationHooks()
+		atom.packages.triggerActivationHook('core:loaded-shell-environment')
 
-    waitsForPromise(() => {
-      return atom.packages.activatePackage('minimap-cursorline')
-    })
-  })
+		const minimapPkg = await atom.packages.activatePackage('minimap')
+		minimap = minimapPkg.mainModule.minimapForEditor(editor)
 
-  describe('with an open editor that have a minimap', () => {
-    let cursor, marker
-    describe('when cursor markers are added to the editor', () => {
-      beforeEach(() => {
-        cursor = editor.addCursorAtScreenPosition({ row: 2, column: 3 })
-        marker = cursor.getMarker()
-      })
+		await atom.packages.activatePackage('minimap-cursorline')
+	})
 
-      it('creates decoration for the cursor markers', () => {
-        expect(Object.keys(minimap.decorationsByMarkerId).length).toEqual(1)
-      })
-    })
-  })
+	describe('with an open editor that have a minimap', () => {
+		describe('when cursor markers are added to the editor', () => {
+			it('creates decoration for the cursor markers', () => {
+				editor.addCursorAtScreenPosition({ row: 2, column: 3 })
+
+				expect(Object.keys(minimap.decorationsByMarkerId).length).toBe(1)
+			})
+		})
+	})
 })

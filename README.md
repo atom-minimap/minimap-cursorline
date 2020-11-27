@@ -1,4 +1,6 @@
-# minimap-cursorline package [![Build Status](https://travis-ci.org/atom-minimap/minimap-cursorline.svg?branch=master)](https://travis-ci.org/atom-minimap/minimap-cursorline)
+# minimap-cursorline package
+
+[![Build Status](https://github.com/atom-minimap/minimap-cursorline/workflows/CI/badge.svg)](https://github.com/atom-minimap/minimap-cursorline/actions)
 
 Highlights the current line(s) with a cursor in Atom's [minimap](https://atom.io/packages/minimap).
 
