@@ -1,3 +1,10 @@
+## [0.2.2](https://github.com/atom-minimap/minimap-cursorline/compare/v0.2.1...v0.2.2) (2020-11-27)
+
+
+### Bug Fixes
+
+* add activation hook ([1568ba8](https://github.com/atom-minimap/minimap-cursorline/commit/1568ba8f3f00e0e6110b9c4b5bc21ea062d95f98))
+
 ## [0.2.1](https://github.com/atom-minimap/minimap-cursorline/compare/v0.2.0...v0.2.1) (2020-11-27)
 
 
