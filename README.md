@@ -1,13 +1,12 @@
 # minimap-cursorline package [![Build Status](https://travis-ci.org/atom-minimap/minimap-cursorline.svg?branch=master)](https://travis-ci.org/atom-minimap/minimap-cursorline)
 
-Displays Atom cursorline in the minimap.
+Highlights the current line in Atom's [minimap](https://github.com/atom-minimap/minimap).
 
 ![Minimap cursorline Screenshot](https://github.com/atom-minimap/minimap-cursorline/blob/master/screenshot.gif?raw=true)
 
-Customization
+Installation
 
-If you want to change the color of the minimap `cursorline` use the following
-CSS rules in your user stylesheet:
+Add a CSS rule to your `styles.less`:
 
 ```css
 .minimap .cursor-line {
