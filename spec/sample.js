@@ -1,7 +1,3 @@
-'use babel'
+/** @babel */
 
-export default class Dummy {
-
-  constructor () {}
-
-}
+export const a = 1
