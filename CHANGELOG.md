@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/atom-minimap/minimap-cursorline/compare/v0.2.2...v1.0.0) (2020-11-28)
+
+
+### Bug Fixes
+
+* minimap dependency ([2b79fa0](https://github.com/atom-minimap/minimap-cursorline/commit/2b79fa01ff28299f3baf77ae41c40487610a2f81))
+
+
+### BREAKING CHANGES
+
+* release 1.0.0
+
 ## [0.2.2](https://github.com/atom-minimap/minimap-cursorline/compare/v0.2.1...v0.2.2) (2020-11-27)
 
 
