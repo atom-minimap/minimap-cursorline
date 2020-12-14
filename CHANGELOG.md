@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/atom-minimap/minimap-cursorline/compare/v1.0.0...v1.0.1) (2020-12-14)
+
+
+### Bug Fixes
+
+* **deps:** bump atom-package-deps from 7.0.2 to 7.0.3 ([#16](https://github.com/atom-minimap/minimap-cursorline/issues/16)) ([3a1da3c](https://github.com/atom-minimap/minimap-cursorline/commit/3a1da3cdeb54ba7d9dcf8f6d3215b96ff1319b56))
+
 # [1.0.0](https://github.com/atom-minimap/minimap-cursorline/compare/v0.2.2...v1.0.0) (2020-11-28)
 
 
