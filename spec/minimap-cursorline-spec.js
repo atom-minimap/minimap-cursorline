@@ -27,7 +27,7 @@ describe('MinimapCursorLine', () => {
 			it('creates decoration for the cursor markers', () => {
 				editor.addCursorAtScreenPosition({ row: 2, column: 3 })
 
-				expect(Object.keys(minimap.decorationsByMarkerId).length).toBe(1)
+				expect(minimap.decorationsByMarkerId.size).toBe(1)
 			})
 		})
 	})
