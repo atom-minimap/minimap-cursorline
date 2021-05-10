@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/atom-minimap/minimap-cursorline/compare/v1.0.3...v1.0.4) (2021-05-10)
+
+
+### Bug Fixes
+
+* decoration management fixes ([#52](https://github.com/atom-minimap/minimap-cursorline/issues/52)) ([7770773](https://github.com/atom-minimap/minimap-cursorline/commit/7770773127858b0ea0ef2a2312b36ced7f2007b2))
+
 ## [1.0.3](https://github.com/atom-minimap/minimap-cursorline/compare/v1.0.2...v1.0.3) (2021-03-30)
 
 
