@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/atom-minimap/minimap-cursorline/compare/v1.0.4...v1.0.5) (2021-07-27)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-node from 2.1.5 to 2.3.0 ([#78](https://github.com/atom-minimap/minimap-cursorline/issues/78)) ([aa3a61c](https://github.com/atom-minimap/minimap-cursorline/commit/aa3a61cce03205937d1951c3759d821beb48ecd8))
+
 ## [1.0.4](https://github.com/atom-minimap/minimap-cursorline/compare/v1.0.3...v1.0.4) (2021-05-10)
 
 
